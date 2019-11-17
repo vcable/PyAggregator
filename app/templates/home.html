@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2>Planet Python</h2>
+            {% for title, link in articles.items() %}
+            <h6 class="articles"><a href="{{ link }}">{{title}}</a></h6>
+            {% endfor %}
+        </div>
+        <div class="col">
+            2 of 3
+        </div>
+        <div class="col">
+            3 of 3
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
