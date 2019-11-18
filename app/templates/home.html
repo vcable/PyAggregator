@@ -1,19 +1,40 @@
 {% extends "base.html" %}
 
 {% block content %}
+<header class="text-center header">
+    <h1>Python news and articles from accross the web</h1>
+</header>
 <div class="container">
     <div class="row">
         <div class="col">
-            <h2>Planet Python</h2>
-            {% for title, link in articles.items() %}
-            <h6 class="articles"><a href="{{ link }}">{{title}}</a></h6>
+            <a href="https://planetpython.org/" class="blog-link"><h3>Planet Python</h3></a>
+            {% for title, link in pp_articles.items() %}
+            <h6><a href="{{ link }}" class="articles">{{title}}</a></h6>
+            {% endfor %}
+            <a href="https://realpython.com/" class="blog-link"><h3>Real Python</h3></a>
+            {% for title, link in rp_articles.items() %}
+            <h6><a href="{{ link }}" class="articles">{{title}}</a></h6>
             {% endfor %}
         </div>
         <div class="col">
-            2 of 3
+            <a href="https://www.reddit.com/r/Python/" class="blog-link"><h3>r/Python</h3></a>
+            {% for title, link in r_python_posts.items() %}
+            <h6><a href="{{ link }}" class="articles">{{title}}</a></h6>
+            {% endfor %}
+            <a href="https://stackoverflow.com/questions/tagged/python" class="blog-link"><h3>Stack Overflow Python</h3></a>
+            {% for title, link in stack_overflow.items() %}
+            <h6><a href="{{ link }}" class="articles">{{title}}</a></h6>
+            {% endfor %}
         </div>
         <div class="col">
-            3 of 3
+            <a href="https://importpython.com/newsletter/" class="blog-link"><h3>Import Python</h3></a>
+            {% for title, link in import_articles.items() %}
+            <h6><a href="{{ link }}" class="articles">{{title}}</a></h6>
+            {% endfor %}
+            <a href="https://thepythonguru.com/blog/" class="blog-link"><h3>Python Guru</h3></a>
+            {% for title, link in guru_articles.items() %}
+            <h6><a href="{{ link }}" class="articles">{{title}}</a></h6>
+            {% endfor %}
         </div>
     </div>
 </div>

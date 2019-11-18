@@ -1,3 +1,41 @@
+body {
+    background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
+ background-blend-mode: normal, lighten, soft-light;
+}
+
+.navbar {
+    font-family: 'Roboto', sans-serif;
+}
+
 .articles {
-    font-size: 10px;
+    font-size: 15px;
+    padding-bottom: 10px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+#pylogo {
+    height: 40px;
+    width: 40px;
+}
+
+.container {
+    padding-top: 20px;
+}
+
+#py-aggregator {
+    padding-right: 30px;
+}
+
+.header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.blog-link {
+    color:#3770A1;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }

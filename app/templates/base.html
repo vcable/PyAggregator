@@ -7,6 +7,7 @@
     {% else %}
     <title>PyAggregator</title>
     {% endif %}
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
@@ -19,7 +20,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a href="{{ url_for('home') }}"><img src="{{ py_logo }}" id="pylogo"></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('home') }}" id="py-aggregator">PyAggregator</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Contact</a>
@@ -29,10 +36,6 @@
                 </li>
         </div>
     </nav>
-    <header class="text-center">
-        <h1>PyAggregator</h1>
-        <h2>An aggregator for all things Python</h2>
-    </header>
 
     {% block content %}{% endblock %}
 
