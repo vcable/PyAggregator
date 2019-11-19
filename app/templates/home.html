@@ -7,33 +7,33 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <a href="https://planetpython.org/" class="blog-link"><h3>Planet Python</h3></a>
+            <a href="https://planetpython.org/" class="blog-link" target="_blank"><h3>Planet Python</h3></a>
             {% for title, link in pp_articles.items() %}
-            <h6><a href="{{ link }}" class="articles">{{title}}</a></h6>
+            <h6><a href="{{ link }}" class="articles" target="_blank">{{title}}</a></h6>
             {% endfor %}
-            <a href="https://realpython.com/" class="blog-link"><h3>Real Python</h3></a>
+            <a href="https://realpython.com/" class="blog-link" target="_blank"><h3>Real Python</h3></a>
             {% for title, link in rp_articles.items() %}
-            <h6><a href="{{ link }}" class="articles">{{title}}</a></h6>
+            <h6><a href="{{ link }}" class="articles" target="_blank">{{title}}</a></h6>
             {% endfor %}
         </div>
         <div class="col">
-            <a href="https://www.reddit.com/r/Python/" class="blog-link"><h3>r/Python</h3></a>
+            <a href="https://www.reddit.com/r/Python/" class="blog-link" target="_blank"><h3>r/Python</h3></a>
             {% for title, link in r_python_posts.items() %}
-            <h6><a href="{{ link }}" class="articles">{{title}}</a></h6>
+            <h6><a href="{{ link }}" class="articles" target="_blank">{{title}}</a></h6>
             {% endfor %}
-            <a href="https://stackoverflow.com/questions/tagged/python" class="blog-link"><h3>Stack Overflow Python</h3></a>
+            <a href="https://stackoverflow.com/questions/tagged/python" class="blog-link" target="_blank"><h3>Stack Overflow Python</h3></a>
             {% for title, link in stack_overflow.items() %}
-            <h6><a href="{{ link }}" class="articles">{{title}}</a></h6>
+            <h6><a href="{{ link }}" class="articles" target="_blank">{{title}}</a></h6>
             {% endfor %}
         </div>
         <div class="col">
-            <a href="https://importpython.com/newsletter/" class="blog-link"><h3>Import Python</h3></a>
+            <a href="https://importpython.com/newsletter/" class="blog-link" target="_blank"><h3>Import Python</h3></a>
             {% for title, link in import_articles.items() %}
-            <h6><a href="{{ link }}" class="articles">{{title}}</a></h6>
+            <h6><a href="{{ link }}" class="articles" target="_blank">{{title}}</a></h6>
             {% endfor %}
-            <a href="https://thepythonguru.com/blog/" class="blog-link"><h3>Python Guru</h3></a>
+            <a href="https://thepythonguru.com/blog/" class="blog-link" target="_blank"><h3>Python Guru</h3></a>
             {% for title, link in guru_articles.items() %}
-            <h6><a href="{{ link }}" class="articles">{{title}}</a></h6>
+            <h6><a href="{{ link }}" class="articles" target="_blank">{{title}}</a></h6>
             {% endfor %}
         </div>
     </div>

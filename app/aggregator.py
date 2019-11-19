@@ -35,7 +35,7 @@ class Aggregator():
         titles = soup.find_all("div", {"class": "card-body"})
         for title in titles:
             if len(self.rp_articles) < 10:
-                self.rp_articles[title.find("h2").text] = title.find("a")["href"]
+                self.rp_articles[title.find("h2").text] = "https://realpython.com" + title.find("a")["href"]
     
     
     def r_python(self):
@@ -68,7 +68,7 @@ class Aggregator():
         questions = soup.find_all("div", {"class": "question-summary"})
         for question in questions:
             if len(self.stack_questions) < 10:
-                self.stack_questions[question.find("h3").text] = question.find("a")["href"]
+                self.stack_questions[question.find("h3").text] = "https://stackoverflow.com" + question.find("a")["href"]
                 
     def python_guru(self):
         data = requests.get("https://thepythonguru.com/blog/").content
@@ -78,5 +78,5 @@ class Aggregator():
         posts = soup.find_all("h2")
         for post in posts:
             if len(self.guru_articles) < 10:
-                self.guru_articles[post.text] = post.find("a")["href"]
+                self.guru_articles[post.text] = "https://thepythonguru.com" + post.find("a")["href"]
 
