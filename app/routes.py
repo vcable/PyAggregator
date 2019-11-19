@@ -17,3 +17,7 @@ def home():
     return render_template("home.html", pp_articles=pp_articles, rp_articles=rp_articles,
                            r_python_posts=r_python_posts, import_articles=import_articles,
                            stack_overflow=stack_overflow, guru_articles=guru_articles, py_logo=py_logo)
+    
+@app.route("/contact")
+def contact():
+    return render_template("contact.html", py_logo=py_logo)
